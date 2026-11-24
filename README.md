@@ -87,7 +87,25 @@ Encryption converts readable data into an unreadable coded format that can only 
 3. Use strong IAM policies, MFA, and least-privilege access - only give users the minimum permissions they need
 
 ## Security Findings
-See `security-findings.md` for full details.
+# Security Findings
+
+## Finding 1: Public Access Risk
+- **Risk:** If Block Public Access is disabled, anyone can access files via a public URL.
+- **Control Applied:** Block all public access enabled.
+- **Result:** Tested object URL -> Access Denied. Secure.
+
+## Finding 2: Unencrypted Data Risk
+- **Risk:** Without encryption, stolen data can be read in plain text.
+- **Control Applied:** SSE-S3 (AES-256) enabled by default.
+- **Result:** All objects are automatically encrypted at rest.
+
+## Finding 3: Over-Permissioned Access
+- **Risk:** Giving too many users access increases breach risk.
+- **Control Applied:** No bucket policy added, only bucket owner has access. Principle of least privilege applied.
+
+## Finding 4: Human Error
+- **Risk:** Accidentally uploading real/confidential files or AWS keys.
+- **Control Applied:** Only sample .txt file uploaded. No credentials in GitHub or S3.
 
 ## Lessons Learned
 See `lessons-learned.md` for full details.
