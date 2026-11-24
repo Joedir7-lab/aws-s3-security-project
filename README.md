@@ -16,7 +16,7 @@ As a Junior Cloud Security Engineer, I was tasked with creating a secure cloud s
 ## Tools Used
 - **Platform:** Amazon Web Services (AWS)
 - **Service:** Amazon S3 (Simple Storage Service)
-- **Region:** af-south-1 (Cape Town) / eu-west-1
+- **Region:** -eu-north-1-an
 - **Documentation:** GitHub
 - **File Type:** Sample .txt file only (no real company data)
 
@@ -29,7 +29,7 @@ As a Junior Cloud Security Engineer, I was tasked with creating a secure cloud s
 
 ### Task 2: Create an S3 Bucket
 1. Clicked "Create bucket"
-2. Bucket name: `my-secure-company-docs-[your-name]` (must be globally unique)
+2. Bucket name: `amabuckett-397303792858-eu-north-1-an ` (must be globally unique)
 3. AWS Region: af-south-1 (Cape Town)
 4. Kept **Block all public access** ENABLED
 5. Created bucket
