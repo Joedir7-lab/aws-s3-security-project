@@ -108,7 +108,13 @@ Encryption converts readable data into an unreadable coded format that can only 
 - **Control Applied:** Only sample .txt file uploaded. No credentials in GitHub or S3.
 
 ## Lessons Learned
-See `lessons-learned.md` for full details.
+# Lessons Learned
+
+1. Cloud security starts during setup, not after. Enabling Block Public Access and encryption from the beginning is easier than fixing a breach.
+2. I learned the difference between authentication (who you are) and authorisation (what you can do).
+3. I learned that a bucket is just a container, but the security settings around it are what protect the data.
+4. I learned to never upload real or sensitive data to a test environment, and never upload AWS keys to GitHub.
+5. I learned how to document a technical project professionally using GitHub, README, screenshots, and structured findings.
 
 ## Conclusion
 I successfully created a secure S3 bucket with Block Public Access enabled and server-side encryption. The project demonstrated that security must be configured by default, not added later. A private, encrypted bucket prevents unauthorised access and protects company data.
